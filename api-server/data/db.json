@@ -1,0 +1,45 @@
+{
+  "categories": [
+    {
+      "name": "hats",
+      "display_name": "hat",
+      "description": "heads cloth",
+      "_id": 1
+    },
+    {
+      "name": "shirts",
+      "display_name": "shirt",
+      "description": "for body",
+      "_id": 2
+    },
+    {
+      "name": "shirts",
+      "display_name": "V",
+      "description": "colored V-shirts",
+      "_id": 3
+    }
+  ],
+  "products": [
+    {
+      "category": "hats",
+      "name": "cascade",
+      "display_name": "cascade",
+      "description": "colored cascade",
+      "_id": 1
+    },
+    {
+      "category": "shirts",
+      "name": "T-shirts",
+      "display_name": "T",
+      "description": "colored T-shirts",
+      "_id": 2
+    },
+    {
+      "category": "shirts",
+      "name": "V nick",
+      "display_name": "V",
+      "description": "colored V-shirts",
+      "_id": 3
+    }
+  ]
+}
