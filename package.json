@@ -1,7 +1,7 @@
 {
   "name": "authentication",
   "version": "1.0.0",
-  "description": "",
+  "description": "- [submission PR](https://github.com/batool-alali-401-advanced-javascript/authenticated-api-server/pull/1)\r - [Swagger Doc](https://app.swaggerhub.com/apis/batoolalali/auth/0.1)",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage --verbose",
@@ -34,5 +34,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.18",
     "morgan": "^1.10.0"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }

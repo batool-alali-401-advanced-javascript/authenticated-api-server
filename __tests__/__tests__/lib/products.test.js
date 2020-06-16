@@ -1,8 +1,8 @@
 'use strict';
 
-const products = require('../../models/products-mod/products-model.js');
+const products = require('../../../api-server/models/products-mod/products-model.js');
 
-
+//models/products-mod/products-model.js
 describe('Products Mongoos', () => {
 
   it('It should be able to create new product', () => {

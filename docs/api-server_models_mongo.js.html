@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: basic</title>
+    <title>JSDoc: Source: api-server/models/mongo.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,132 +17,74 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: basic</h1>
+    <h1 class="page-title">Source: api-server/models/mongo.js</h1>
 
     
 
 
 
-
-<section>
-
-<header>
     
-        
-            
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-            <div class="description">Basic middleware</div>
-        
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_auth_middleware_basic.js.html">src/auth/middleware/basic.js</a>, <a href="src_auth_middleware_basic.js.html#line6">line 6</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+
+/**
+* Model Model
+* @module Model
+*/
+
+/**
+* Model Constructor
+* @param {object} schema
+*/
+
+
+class Model {
+  constructor(schema) {
+    this.schema = schema;
+  }
+
+  /**
+   * get one or all records
+   * @param {number} _id 
+   * @returns {array} the records
+   */
+  get(_id) {
+    let obj = _id ? { _id } : {};
+    return this.schema.find(obj);
+  } 
+
+  /**
+   * Create a record
+   * @param  {object}  record
+   */
+  create(record) {
+    let obj = new this.schema(record);
+    return obj.save();
+  } 
+
+  /**
+   * Update a record in the database
+   * @param {number} _id Record ID
+   * @param {object} record The new data to replace. ID is a required field
+   * @returns {object}
+   */
+  update(_id, record) {
+    return this.schema.findByIdAndUpdate(_id, record, { new: true });
+  } 
+  /**
+   * Deletes a recod in the model
+   * @param id {string} Mongo Record ID
+   */
+  delete(_id) {
+    return this.schema.findByIdAndDelete(_id);
+  } 
+} 
+
+module.exports = Model;
+</code></pre>
+        </article>
+    </section>
 
 
 

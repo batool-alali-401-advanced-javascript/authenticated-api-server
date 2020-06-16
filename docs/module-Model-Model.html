@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: Oauth</title>
+    <title>JSDoc: Class: Model</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: Oauth</h1>
+    <h1 class="page-title">Class: Model</h1>
 
     
 
@@ -28,8 +28,10 @@
 
 <header>
     
+        <h2><span class="attribs"><span class="type-signature"></span></span>
+            <span class="ancestors"><a href="module-Model.html">Model</a>~</span>Model<span class="signature">(schema)</span><span class="type-signature"></span></h2>
         
-            
+            <div class="class-description">Model Constructor</div>
         
     
 </header>
@@ -38,20 +40,74 @@
     <div class="container-overview">
     
         
-            <div class="description">Outh middleware</div>
+
+    
+    <h2>Constructor</h2>
+    
+
+    
+    <h4 class="name" id="Model"><span class="type-signature"></span>new Model<span class="signature">(schema)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
         
 
         
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>schema</code></td>
             
 
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
 
 
+            
+            </td>
 
+            
 
+            
 
+            <td class="description last"></td>
+        </tr>
 
-
-
+    
+    </tbody>
+</table>
 
 
 
@@ -87,7 +143,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_auth_middleware_oauth.js.html">src/auth/middleware/oauth.js</a>, <a href="src_auth_middleware_oauth.js.html#line12">line 12</a>
+        <a href="api-server_models_mongo.js.html">api-server/models/mongo.js</a>, <a href="api-server_models_mongo.js.html#line15">line 15</a>
     </li></ul></dd>
     
 
@@ -117,7 +173,6 @@
 
 
 
-        
     
     </div>
 
@@ -144,7 +199,7 @@
     
 
     
-    <h4 class="name" id="~exchangeCodeForToken"><span class="type-signature">(async, inner) </span>exchangeCodeForToken<span class="signature">(code)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="create"><span class="type-signature"></span>create<span class="signature">(record)</span><span class="type-signature"></span></h4>
     
 
     
@@ -152,7 +207,7 @@
 
 
 <div class="description">
-    exchange Code For Token
+    Create a record
 </div>
 
 
@@ -188,13 +243,13 @@
 
         <tr>
             
-                <td class="name"><code>code</code></td>
+                <td class="name"><code>record</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">object</span>
 
 
             
@@ -204,7 +259,7 @@
 
             
 
-            <td class="description last">The user code</td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -245,7 +300,281 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_auth_middleware_oauth.js.html">src/auth/middleware/oauth.js</a>, <a href="src_auth_middleware_oauth.js.html#line35">line 35</a>
+        <a href="api-server_models_mongo.js.html">api-server/models/mongo.js</a>, <a href="api-server_models_mongo.js.html#line33">line 33</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="delete"><span class="type-signature"></span>delete<span class="signature">(id)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Deletes a recod in the model
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Mongo Record ID</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api-server_models_mongo.js.html">api-server/models/mongo.js</a>, <a href="api-server_models_mongo.js.html#line51">line 51</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(_id)</span><span class="type-signature"> &rarr; {array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    get one or all records
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api-server_models_mongo.js.html">api-server/models/mongo.js</a>, <a href="api-server_models_mongo.js.html#line24">line 24</a>
     </li></ul></dd>
     
 
@@ -274,7 +603,7 @@
 
         
 <div class="param-desc">
-    access_token
+    the records
 </div>
 
 
@@ -285,7 +614,7 @@
     </dt>
     <dd>
         
-<span class="param-type">string</span>
+<span class="param-type">array</span>
 
 
     </dd>
@@ -303,7 +632,7 @@
     
 
     
-    <h4 class="name" id="~getRemoteUserInfo"><span class="type-signature">(async, inner) </span>getRemoteUserInfo<span class="signature">(token)</span><span class="type-signature"> &rarr; {object}</span></h4>
+    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">(_id, record)</span><span class="type-signature"> &rarr; {object}</span></h4>
     
 
     
@@ -311,7 +640,7 @@
 
 
 <div class="description">
-    get Remote User Info
+    Update a record in the database
 </div>
 
 
@@ -347,13 +676,13 @@
 
         <tr>
             
-                <td class="name"><code>token</code></td>
+                <td class="name"><code>_id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">number</span>
 
 
             
@@ -363,7 +692,30 @@
 
             
 
-            <td class="description last">The access token</td>
+            <td class="description last">Record ID</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>record</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The new data to replace. ID is a required field</td>
         </tr>
 
     
@@ -404,7 +756,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_auth_middleware_oauth.js.html">src/auth/middleware/oauth.js</a>, <a href="src_auth_middleware_oauth.js.html#line55">line 55</a>
+        <a href="api-server_models_mongo.js.html">api-server/models/mongo.js</a>, <a href="api-server_models_mongo.js.html#line44">line 44</a>
     </li></ul></dd>
     
 
@@ -432,10 +784,6 @@
 <h5>Returns:</h5>
 
         
-<div class="param-desc">
-    userInfo
-</div>
-
 
 
 <dl>
@@ -445,165 +793,6 @@
     <dd>
         
 <span class="param-type">object</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~getUser"><span class="type-signature">(async, inner) </span>getUser<span class="signature">(remoteUser)</span><span class="type-signature"> &rarr; {Array}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    get user
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>remoteUser</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The userInfo</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_auth_middleware_oauth.js.html">src/auth/middleware/oauth.js</a>, <a href="src_auth_middleware_oauth.js.html#line71">line 71</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    user data
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array</span>
 
 
     </dd>

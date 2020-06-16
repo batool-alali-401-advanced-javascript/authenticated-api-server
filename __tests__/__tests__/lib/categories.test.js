@@ -1,8 +1,8 @@
 'use strict';
 
 
-const categories = require('../../models/categories-mod/categories-model.js');
-
+const categories = require('../../../api-server/models/categories-mod/categories-model.js');
+//models/categories-mod/categories-model.js'
 
 describe('Categories Mongoos', () => {
 
