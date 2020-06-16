@@ -11,7 +11,7 @@
 - [Swagger Doc](https://app.swaggerhub.com/apis/batoolalali/auth/0.1)
 - [Heroku](https://api-auth-batool.herokuapp.com/)
 - [jsdoc](https://api-auth-batool.herokuapp.com/docs/)
-- [ci]()
+- [ci](https://github.com/batool-alali-401-advanced-javascript/authenticated-api-server/pull/2/checks?check_run_id=778011136)
 ### Setup
 - .env => 
     - PORT
